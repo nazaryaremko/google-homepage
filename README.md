@@ -1,1 +1,1 @@
-In this project I will use browser's developer tools to deconstruct a website and rebuild it
+In this project I used html and css to build google homepage. This was my first practice building a website interface (without any functionality - I am planning to learn JavaScript next to build more complex websites). I used chrome developer tools to inspect other websites and use some of the code to improve my own website.
