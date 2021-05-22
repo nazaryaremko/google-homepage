@@ -1,0 +1,356 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <style>
+            .google {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                top: 0px;
+            }
+            .magn {
+                position: relative;
+                top: 45%;
+                left: 5%;
+                transform: translate(-50%, -50%);
+            }
+            .mic {
+                position: relative;
+                top: 45%;
+                left: 89%;
+                transform: translate(-50%, -50%);
+            }
+
+            header {
+                position: relative;
+                height: 25vh;
+                background-color: transparent;
+            }
+            .up {
+                position: relative;
+                width:100%;
+                height:27%;
+                background-color: transparent;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(30px, infinite));
+                grid-template-rows: repeat(1, 100px);
+            }
+            .u1 {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 0;
+                grid-row-end: 1;
+                }
+            .u2 {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 0;
+                grid-row-end: 1;
+                }
+            .u4 {
+                grid-column-start: 5;
+                grid-column-end: 6;
+                grid-row-start: 0;
+                grid-row-end: 1;
+                text-align: end;
+                
+                }
+            .u5 {
+                grid-column-start: 6;
+                grid-column-end: 7;
+                grid-row-start: 0;
+                grid-row-end: 1;
+                text-align: end;
+                }
+            .up .u1:hover{
+                text-decoration: underline;
+            }
+            .up .u2:hover{
+                text-decoration: underline;
+            }
+            .up .u4:hover{
+                text-decoration: underline;
+            }
+            .up .u5:hover{
+                text-decoration: underline;
+            }
+
+            footer {
+                position:absolute;
+                bottom:0;
+                height:5vh;
+                width:100%;
+                background-color: transparent;
+            }
+            .down {
+                position: relative;
+                width:100%;
+                background-color: transparent;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(30px, infinite));
+                grid-template-rows: repeat(2, 100px);
+            }
+            .d1 {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 1;
+                text-align: start;
+                }
+            .d2 {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 1;
+                text-align: start;
+                }
+            .d3 {
+                grid-column-start: 3;
+                grid-column-end: 4;
+                grid-row-start: 2;
+                grid-row-end: 1;
+                text-align: start;
+                }
+            .d5 {
+                grid-column-start: 6;
+                grid-column-end: 7;
+                grid-row-start: 2;
+                grid-row-end: 1;
+                text-align: end;
+                }
+            .d6 {
+                grid-column-start: 7;
+                grid-column-end: 8;
+                grid-row-start: 2;
+                grid-row-end: 1;
+                text-align: end;
+                }
+            .d7 {
+                grid-column-start: 8;
+                grid-column-end: 9;
+                grid-row-start: 2;
+                grid-row-end: 1;
+                text-align: end;
+                }
+            .down .d1:hover{
+                text-decoration: underline;
+            }
+            .down .d2:hover{
+                text-decoration: underline;
+            }
+            .down .d3:hover{
+                text-decoration: underline;
+            }
+            .up .d5:hover{
+                text-decoration: underline;
+            }
+            .down .d6:hover{
+                text-decoration: underline;
+            }
+            .down .d7:hover{
+                text-decoration: underline;
+            }
+            .about{
+                position: relative;
+
+            }
+            .store{
+                position: relative;
+                top: 0%;
+                left: 10%;
+            }
+            .gmail{
+
+            }
+            .images{
+
+            }
+
+            main {
+                position: relative;
+                height: 80vh;
+            }
+
+            @media (min-width:800px){
+                .box2 {
+                    position: absolute;
+                    top: 31%;
+                    left: 43%;
+                    transform: translate(-50%, -50%);
+                    background: rgb(214, 214, 214);
+                    border: solid 0.1px black;
+                    width: 100px;
+                    height: 25px;
+                    font-size: 12px;
+                    text-align: center;
+                    line-height: 25px;
+                    border: 1px solid transparent;
+                    }
+                .box2:hover {
+                    position: absolute;
+                    top: 31%;
+                    left: 43%;
+                    transform: translate(-50%, -50%);
+                    background: rgb(214, 214, 214);
+                    border: solid 0.1px black;
+                    width: 100px;
+                    height: 25px;
+                    font-size: 12px;
+                    text-align: center;
+                    line-height: 25px;
+                    border: 1px solid #555555;
+                    }
+                .box3 {
+                    position: absolute;
+                    top: 31%;
+                    left: 57%;
+                    transform: translate(-50%, -50%);
+                    background: rgb(214, 214, 214);
+                    border: solid 0.1px black;
+                    width: 100px;
+                    height: 25px;
+                    font-size: 12px;
+                    text-align: center;
+                    line-height: 25px;
+                    border: 1px solid transparent;
+                    }
+                .box3:hover{
+                    position: absolute;
+                    top: 31%;
+                    left: 57%;
+                    transform: translate(-50%, -50%);
+                    background: rgb(214, 214, 214);
+                    border: solid 0.1px black;
+                    width: 100px;
+                    height: 25px;
+                    font-size: 12px;
+                    text-align: center;
+                    line-height: 25px;
+                    border: 1px solid #555555;
+                    }
+                }
+            @media (max-width:800px){
+                .box2 {
+                    position: absolute;
+                    top: 31%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: rgb(214, 214, 214);
+                    border: solid 0.1px black;
+                    width: 100px;
+                    height: 25px;
+                    font-size: 12px;
+                    text-align: center;
+                    line-height: 25px;
+                    border: 1px solid transparent;
+                    }
+
+                .box2:hover{
+                    position: absolute;
+                    top: 31%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: rgb(214, 214, 214);
+                    border: solid 0.1px black;
+                    width: 100px;
+                    height: 25px;
+                    font-size: 12px;
+                    text-align: center;
+                    line-height: 25px;
+                    border: 1px solid #555555;
+                    }
+
+                .box3 {
+                    position: absolute;
+                    top: 36%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: rgb(214, 214, 214);
+                    border: solid 0.1px black;
+                    width: 100px;
+                    height: 25px;
+                    font-size: 12px;
+                    text-align: center;
+                    line-height: 25px;
+                    border: 1px solid transparent;
+                    }
+                .box3:hover{
+                    position: absolute;
+                    top: 36%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: rgb(214, 214, 214);
+                    border: solid 0.1px black;
+                    width: 100px;
+                    height: 25px;
+                    font-size: 12px;
+                    text-align: center;
+                    line-height: 25px;
+                    border: 1px solid #555555;
+                    }
+                }
+            .box {
+                position: absolute;
+                top: 25%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: transparent;
+                border: solid 0.1px black;
+                width: 300px;
+                height: 25px;
+                border-radius: 15px;
+            }
+
+            .box:hover{
+                position: absolute;
+                top: 25%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: transparent;
+                border: solid 0.1px black;
+                width: 300px;
+                height: 25px;
+                border-radius: 15px;
+                box-shadow: 2px 2px 2px
+            }
+            
+            
+        </style>
+
+    </head>
+    
+    <header>
+        <div class="up">
+            <div class="u1">About</div>
+            <div class="u2">Store</div>
+            <div class="u3"></div>
+            <div class="u4">Gmail</div>
+            <div class="u5">Images</div>
+          </div>
+    </header>
+    <main> 
+        <div> <img alt="Google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+            width="270" height="110" class="google"> </div>
+        <div class="box"> <img alt="Magnifying glass" src="https://upload.wikimedia.org/wikipedia/commons/5/55/Magnifying_glass_icon.svg"
+            width="15" height="15" class="magn"> 
+            <img alt="Microphone" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Google_mic.svg"
+            width="15" height="15" class="mic"></div>
+        <div class="box2"> Google Search</div>
+        <div class="box3"> I'm Feeling Lucky</div>
+    </main>
+    <footer>
+        <div class="down">
+            <div class="d1">Advertising</div>
+            <div class="d2">Business</div>
+            <div class="d3">How Search works</div>
+            <div class="d4"></div>
+            <div class="d5">Privacy</div>
+            <div class="d6">Terms</div>
+            <div class="d7">Settings</div>
+          </div>
+    </footer>
+    
+</html>
+
+
