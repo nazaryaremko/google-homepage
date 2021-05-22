@@ -1,0 +1,1 @@
+In this project I will use browser's developer tools to deconstruct a website and rebuild it
